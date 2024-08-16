@@ -1,9 +1,10 @@
-FROM mongo:latest
+FROM node:14-alpine3.15
 
-COPY docker-entrypoint.sh /docker-entrypoint.sh
+WORKDIR /app
 
-RUN chmod +x /docker-entrypoint.sh
+COPY . .
 
-ENTRYPOINT ["/docker-entrypoint.sh"]
+RUN npm install
 
-EXPOSE 27017
+
+CMD [ "npm", "start" ]
