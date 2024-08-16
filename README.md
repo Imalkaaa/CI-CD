@@ -1,3 +1,4 @@
+
 # docer_image
  1. Create a Docker Hub Account
 Ensure you have a Docker Hub account and create a repository where your images will be pushed.
@@ -16,3 +17,5 @@ DOCKER_HUB_ACCESS_TOKEN: A Docker Hub access token (preferred) or password.
 
 4. Create a GitHub Actions Workflow
 Add a .github/workflows/docker-publish.yml file to your repository. This file will define the workflow to build and push the Docker image to Docker Hub.
+
+
